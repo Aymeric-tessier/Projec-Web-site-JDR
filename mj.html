@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Club JDR - Espace MJ</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <a class="logo" href="index.html">Club JDR</a>
+        <nav>
+            <a href="index.html">Accueil</a>
+            <a href="jeux.html">Jeux de rôle</a>
+            <a href="planning.html">Planning</a>
+            <a href="personnages.html">Personnages</a>
+            <a href="mj.html">Espace MJ</a>
+            <a href="discord.html">Discord</a>
+        </nav>
+    </header>
+    <main>
+        <section class="page-heading">
+            <p class="eyebrow">Préparez vos aventures</p>
+            <h1>Espace maître du jeu</h1>
+            <p>Proposez un nouvel univers et contribuez aux prochaines aventures du club.</p>
+        </section>
+        <section class="content-panel">
+            <h2>Proposer un jeu de rôle</h2>
+            <p>Présentez votre projet en indiquant son nom, son univers et sa description. La proposition pourra ensuite être transmise à la personne qui gère le catalogue.</p>
+            <form action="mailto:contact@exemple.fr" method="post" enctype="text/plain">
+                <div class="form-group">
+                    <label for="game-name">Nom du jeu</label>
+                    <input id="game-name" name="Nom du jeu" type="text" required>
+                </div>
+                <div class="form-group">
+                    <label for="game-type">Type de jeu</label>
+                    <select id="game-type" name="Type de jeu" required>
+                        <option value="">Choisir une catégorie</option>
+                        <option>Campagne</option>
+                        <option>One-shot</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="game-universe">Univers</label>
+                    <select id="game-universe" name="Univers" required>
+                        <option value="">Choisir un univers</option>
+                        <option>Fantasy</option>
+                        <option>Science-fiction</option>
+                        <option>Aventure</option>
+                        <option>Horreur</option>
+                        <option>Post-apocalyptique</option>
+                        <option>Autre</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="game-master">Nom du maître du jeu</label>
+                    <input id="game-master" name="Maître du jeu" type="text" required>
+                </div>
+                <div class="form-group">
+                    <label for="game-description">Description</label>
+                    <textarea id="game-description" name="Description" rows="5" required></textarea>
+                </div>
+                <button class="button" type="submit">Préparer la proposition</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>Club JDR — Un univers, mille aventures.</p>
+    </footer>
+</body>
+</html>
